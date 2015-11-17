@@ -1,0 +1,19 @@
+$ORIGIN .
+$TTL 10800	; 3 hours
+10.IN-ADDR.ARPA		IN SOA	dns.libiticum.lan. root.libiticum.lan. (
+				95         ; serial
+				14400      ; refresh (4 hours)
+				3600       ; retry (1 hour)
+				604800     ; expire (1 week)
+				10800      ; minimum (3 hours)
+				)
+			NS	dns.libiticum.lan.
+$ORIGIN 10.10.10.IN-ADDR.ARPA.
+$TTL 43200	; 12 hours
+12			PTR	100-ipvl-dok001.services.libiticum.lan.
+13			PTR	100-ipvl-cmk001.services.libiticum.lan.
+$ORIGIN 30.10.10.IN-ADDR.ARPA.
+3			PTR	300-ipvw-wkp002.mgtw.libiticum.lan.
+4			PTR	300-ipvw-wkp001.mgtw.libiticum.lan.
+$ORIGIN 10.10.IN-ADDR.ARPA.
+5.70			PTR	laptop.data.libiticum.lan.

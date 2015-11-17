@@ -1,0 +1,71 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+libiticum.lan		IN SOA	dns.libiticum.lan. root.libiticum.lan. (
+				177        ; serial
+				86400      ; refresh (1 day)
+				3600       ; retry (1 hour)
+				604800     ; expire (1 week)
+				10800      ; minimum (3 hours)
+				)
+			NS	dns.libiticum.lan.
+$ORIGIN libiticum.lan.
+chirongw		A	192.168.150.254
+$TTL 43200	; 12 hours
+laptop.data		A	10.10.70.5
+			TXT	"3178c672cc264ea467a685a2a8a2dc77cf"
+$ORIGIN devices.libiticum.lan.
+$TTL 86400	; 1 day
+nucl			A	10.10.70.101
+nucr			A	10.10.70.102
+$ORIGIN libiticum.lan.
+dns			A	10.10.10.2
+gezondheid		CNAME	300-ipvw-wkp002.mgtw
+gw-100			A	10.10.10.1
+gw-200			A	10.10.20.1
+gw-300			A	10.10.30.1
+gw-400			A	10.10.40.1
+gw-500			A	10.10.50.1
+gw-600			A	10.10.60.1
+gw-700			A	10.10.70.1
+gw-800			A	10.10.80.1
+iqn			A	10.10.70.100
+ldap			A	10.10.10.100
+ml-002.mgtl		A	10.10.20.102
+$ORIGIN mgtw.libiticum.lan.
+$TTL 43200	; 12 hours
+300-ipvw-wkp001		A	10.10.30.4
+			TXT	"3129555ee1f11ba0443cba813d7bf12f9e"
+300-ipvw-wkp002		A	10.10.30.3
+			TXT	"31e8b80925ad59b98767e26cc4f428472b"
+$ORIGIN libiticum.lan.
+$TTL 86400	; 1 day
+monitor			CNAME	100-ipvl-cmk001.services
+router			A	192.168.88.1
+rwswerkplek		CNAME	300-ipvw-wkp001.mgtw
+$ORIGIN services.libiticum.lan.
+$TTL 43200	; 12 hours
+100-ipvl-cmk001		A	10.10.10.13
+			TXT	"007a92fb94b74b346f24cd493f9980e78d"
+100-ipvl-dok001		A	10.10.10.12
+			TXT	"004463c83b7cfddd0ddd7119de093a3639"
+$TTL 600	; 10 minutes
+300-ipvw-wkp002		A	10.10.30.5
+$ORIGIN libiticum.lan.
+$TTL 86400	; 1 day
+torrent			A	10.10.70.100
+vcenter			A	10.10.10.103
+webcache		A	10.10.10.111
+$ORIGIN wifi.libiticum.lan.
+$TTL 43200	; 12 hours
+android-3b7e9f961cc4f3f4 A	192.168.88.4
+			TXT	"00f4422586719862a566876ead654578c2"
+iPhone-van-S		A	192.168.88.2
+			TXT	"3187a4c8314f51fd7059ca37d14231269d"
+laptop			A	192.168.88.7
+			TXT	"310bde3e22c4cb1eb7ed990e29ff9525a3"
+Sander-ipad		A	192.168.88.3
+			TXT	"31212ea387cb6aeee6409cd6ba152d32a5"
+$ORIGIN libiticum.lan.
+$TTL 86400	; 1 day
+wiki			CNAME	100-ipvl-dok001.services
+wpad			CNAME	100-ipvl-dok001.services
